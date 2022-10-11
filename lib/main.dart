@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_m_expense/routes/route_names.dart';
 
 import 'package:flutter_m_expense/screens/home.dart';
+import 'package:flutter_m_expense/screens/trip/add_and_edit_trip.dart';
 import 'package:flutter_m_expense/screens/trip/trip_view.dart';
 
 void main() {
@@ -19,7 +20,8 @@ class MExpense extends StatelessWidget {
     return MaterialApp(
       routes: {
         RouteNames.Home: (context) => const Home(),
-        RouteNames.TripView: (context) => const TripView()
+        RouteNames.TripView: (context) => const TripView(),
+        RouteNames.AddAndEditTrip: (context) => const AddAndEditTrip(),
       },
       initialRoute: RouteNames.Home,
     );

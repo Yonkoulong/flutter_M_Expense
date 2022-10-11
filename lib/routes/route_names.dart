@@ -3,4 +3,5 @@
 class RouteNames {
   static const Home = "/home";
   static const TripView = "/trip_view";
+  static const AddAndEditTrip = "/add_and_edit_trip";
 }
