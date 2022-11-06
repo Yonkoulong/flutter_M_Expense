@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_m_expense/models/trip_entity.dart';
 import 'package:flutter_m_expense/routes/route_names.dart';
 
 import 'package:flutter_m_expense/screens/home.dart';
@@ -21,7 +22,9 @@ class MExpense extends StatelessWidget {
       routes: {
         RouteNames.Home: (context) => const Home(),
         RouteNames.TripView: (context) => const TripView(),
-        RouteNames.AddAndEditTrip: (context) => const AddAndEditTrip(),
+        RouteNames.AddAndEditTrip: (context) => AddAndEditTrip(
+          theTrip: TripEntity.empty(),
+        ),
       },
       initialRoute: RouteNames.Home,
     );
